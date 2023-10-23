@@ -1,4 +1,6 @@
 #pragma once
+#include <deque>
+
 class FrontMiddleBackQueue
 {
 public:
@@ -15,5 +17,8 @@ public:
 	int popMiddle();
 
 	int popBack();
+
+private:
+	std::deque<int> queue; 
 };
 
